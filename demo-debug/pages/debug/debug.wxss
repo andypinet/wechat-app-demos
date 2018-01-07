@@ -1,0 +1,50 @@
+/* pages/debug/debug.wxss */
+.debug-row::after {
+  display: flex;
+  content: '';
+  clear: both;
+}
+
+.debug-title {
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  width: 100vw;
+  margin-bottom: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.debug-color-item {
+  background-color: #4bf1b5;
+}
+
+/* 测试内容 */
+.debug-float-left {
+  float: left;
+}
+
+.debug-test-inline {
+  display: inline;
+}
+
+.debug-test-inlineblock {
+  display: inline-block;
+}
+
+.debug-test-firstletter::first-letter {
+  color: blueviolet;
+}
+
+.debug-test-firstline::first-line {
+  color: blueviolet;
+}
+
+text.debug-test-nthtype:nth-of-type(1) {
+ color: blueviolet;
+}
+
+.debug-test-halfvw {
+  width: 50vw;
+}

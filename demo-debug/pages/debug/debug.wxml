@@ -1,0 +1,55 @@
+<!--pages/debug/debug.wxml-->
+<view class="debug-row debug-collpase">
+  <text class="debug-title">系统信息</text>
+  <scroll-view style='height: 170px;' scroll-y>
+      <view style="display: flex; justify-content: space-between;" wx:for="{{systems}}" wx:for-index="idx" wx:key="*this"> <text>{{idx}}</text> <text>{{item}}</text></view>
+  </scroll-view>
+</view>
+<view class="debug-row">
+   <text class="debug-title">test float</text>
+   <view>
+      <view class="debug-float-left debug-color-item">1</view>
+      <view class="debug-float-left debug-color-item">1</view>
+   </view>
+</view>
+<view class="debug-row">
+   <text class="debug-title">test inline</text>
+   <view>
+      <view class="debug-test-inline debug-color-item">1</view>
+      <view class="debug-test-inline debug-color-item">1</view>
+   </view>
+</view>
+<view class="debug-row">
+   <text class="debug-title">test inline block</text>
+   <view>
+      <view class="debug-test-inlineblock debug-color-item">1</view>
+      <view class="debug-test-inlineblock debug-color-item">1</view>
+   </view>
+</view>
+<view class="debug-row">
+   <text class="debug-title">test ::first-letter</text>
+   <view>
+      <view class="debug-test-firstletter">firstletterr</view>
+   </view>
+</view>
+<view class="debug-row">
+   <text class="debug-title">test ::first-line</text>
+   <view>
+      <view class="debug-test-firstline">firstline</view>
+   </view>
+</view>
+<view class="debug-row">
+   <text class="debug-title">test :nth-type(1)</text>
+   <view>
+      <view class="debug-test-nthtype">view 1</view>
+      <text class="debug-test-nthtype">text 1</text>
+      <view class="debug-test-nthtype">view 2</view>
+   </view>
+</view>
+<view class="debug-row">
+   <text class="debug-title">test half vw</text>
+   <view>
+      <view class="debug-test-halfvw debug-color-item">50vw</view>     
+   </view>
+</view>
+

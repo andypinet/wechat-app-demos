@@ -1,0 +1,27 @@
+.user-logo-view {
+  height: 240rpx;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.log-item {
+  display: block;
+  width: 100%;
+  margin: 10rpx;
+}
+
+.user-logo, .user-name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rpx;
+}
+
+.user-logo > image {
+  width:60px;
+  height:60px;
+  border-radius:1000px;
+}

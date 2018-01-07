@@ -1,0 +1,25 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view class="user-logo">
+    <image mode="scaleToFill" src="{{avatarUrl}}"></image>
+  </view>
+  <view class="user-name" wx:if="{{nickName}}">
+    <view>{{nickName}}</view>
+  </view>
+  <scroll-view class="user-logo-view" scroll-y>
+    <block wx:for="{{logs}}" wx:for-item="log" wx:key="logkey">
+      <text class="log-item">{{index + 1}}. {{log}}</text>
+    </block>
+  </scroll-view>
+  <view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </view>        
+            <view class="weui-cell__bd">标题文字</view>
+            <view class="weui-cell__ft">说明文字</view>
+        </view>       
+    </view>
+  </view>
+</view>
